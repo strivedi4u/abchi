@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitMax - Maximize Your Business Potential</title>
+    <meta name="description" content="Transform your business with data-driven profit optimization strategies. Increase revenue, reduce costs, and maximize growth.">
+    <link rel="stylesheet" href="profit-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-chart-line"></i>
+                <span>ProfitMax</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Maximize Your Business
+                    <span class="gradient-text">Profits</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your business with data-driven strategies that increase revenue, 
+                    reduce costs, and accelerate growth. Join 500+ companies that have increased 
+                    their profits by an average of 45%.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal()">Start Free Analysis</button>
+                    <button class="btn btn-secondary">Watch Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="45">0</div>
+                        <div class="stat-label">% Avg Profit Increase</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2.5">0</div>
+                        <div class="stat-label">Million $ Generated</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profit-chart">
+                    <canvas id="profitChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Profit Optimization Services</h2>
+                <p>Comprehensive solutions to boost your bottom line</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Revenue Analysis</h3>
+                    <p>Deep dive into your revenue streams to identify growth opportunities and optimize pricing strategies.</p>
+                    <ul>
+                        <li>Market analysis</li>
+                        <li>Pricing optimization</li>
+                        <li>Revenue forecasting</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Cost Reduction</h3>
+                    <p>Systematic approach to reducing operational costs without compromising quality or performance.</p>
+                    <ul>
+                        <li>Process optimization</li>
+                        <li>Vendor negotiations</li>
+                        <li>Automation solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Growth Strategy</h3>
+                    <p>Develop scalable growth strategies that ensure sustainable profit increases over time.</p>
+                    <ul>
+                        <li>Market expansion</li>
+                        <li>Product development</li>
+                        <li>Strategic partnerships</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proven Results</h2>
+                <p>Real success stories from our clients</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-image">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>TechStart Inc.</h3>
+                        <p class="result-metric">+78% Profit Increase</p>
+                        <p>"ProfitMax helped us optimize our SaaS pricing model and reduce customer acquisition costs. Our monthly recurring revenue grew by 78% in just 6 months."</p>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>Manufacturing Plus</h3>
+                        <p class="result-metric">+52% Profit Increase</p>
+                        <p>"Through process optimization and cost reduction strategies, we saved $2.3M annually while improving our profit margins significantly."</p>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3>RetailMax</h3>
+                        <p class="result-metric">+64% Profit Increase</p>
+                        <p>"The revenue analysis revealed untapped market opportunities. We expanded to new markets and increased our profit by 64% year-over-year."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Growth Plan</h2>
+                <p>Flexible pricing options for businesses of all sizes</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">$2,999<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic profit analysis</li>
+                        <li><i class="fas fa-check"></i> Monthly reports</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> 1 consultation/month</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">$5,999<span>/month</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Comprehensive analysis</li>
+                        <li><i class="fas fa-check"></i> Weekly reports</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> 4 consultations/month</li>
+                        <li><i class="fas fa-check"></i> Custom strategies</li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full-service optimization</li>
+                        <li><i class="fas fa-check"></i> Real-time dashboards</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                        <li><i class="fas fa-check"></i> Unlimited consultations</li>
+                        <li><i class="fas fa-check"></i> Dedicated team</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Maximize Your Profits?</h2>
+                    <p>Get started with a free profit analysis and discover how much you could be earning.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@profitmax.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Ave, NY 10001</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your business challenges..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Get Free Analysis</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>ProfitMax</span>
+                    </div>
+                    <p>Empowering businesses to achieve maximum profitability through data-driven strategies and expert consultation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Revenue Analysis</a></li>
+                        <li><a href="#services">Cost Reduction</a></li>
+                        <li><a href="#services">Growth Strategy</a></li>
+                        <li><a href="#services">Business Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#results">Case Studies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ProfitMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="analysisModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Free Profit Analysis</h2>
+            <form id="analysisForm">
+                <div class="form-group">
+                    <label for="businessName">Business Name</label>
+                    <input type="text" id="businessName" name="businessName" required>
+                </div>
+                <div class="form-group">
+                    <label for="industry">Industry</label>
+                    <select id="industry" name="industry" required>
+                        <option value="">Select Industry</option>
+                        <option value="technology">Technology</option>
+                        <option value="retail">Retail</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="services">Services</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="revenue">Annual Revenue</label>
+                    <select id="revenue" name="revenue" required>
+                        <option value="">Select Range</option>
+                        <option value="under-1m">Under $1M</option>
+                        <option value="1m-10m">$1M - $10M</option>
+                        <option value="10m-50m">$10M - $50M</option>
+                        <option value="over-50m">Over $50M</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="analysisEmail">Email Address</label>
+                    <input type="email" id="analysisEmail" name="analysisEmail" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Request Analysis</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="profit-script.js"></script>
+</body>
+</html>
